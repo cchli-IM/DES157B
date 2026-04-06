@@ -15,12 +15,16 @@ body {
     color: rgb(235, 235, 235);
     transition: all 2s;
     background-image: url(images/daymode.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body.switch {
     background-color: rgb(235, 235, 235);
     color: #333;
     background-image: url(images/lcmode.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #container {
@@ -107,26 +111,36 @@ section.switch a:hover {
 }
 
 button {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    padding: 12px;
-    background-color: orange;
+    position: fixed;
+    top: 135px;
+    left: 75px;
+    padding: 0;
+    background-color: transparent;
     color: #333;
-    border: 1px solid transparent;
-}
-
-button:hover {
-    background-color: coral;
+    border: none;
     cursor: pointer;
 }
 
-button.switch {
-    background-color: rgb(235, 235, 235);
-    border-color: #333;
+button img {
+    width: 122px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
 }
 
-button.switch:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235)
+button:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 10px rgba(132, 83, 145, 0.7);
+}
+
+button.switch{
+    background-color: transparent;
+}
+
+button.switch img {
+    content: url('images/evilnecronomiconbutton.png');
+}
+
+button.switch img:hover {
+    box-shadow: 0 0 15px 10px rgba(182, 49, 67, 0.7);
 }
