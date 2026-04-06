@@ -72,13 +72,18 @@ main section {
     text-align: center;
     font-family: "Jost", sans-serif;
     font-style: normal;
+    margin-top: 20px;
 }
 
 section h3{
     color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0 auto;
 }
 section.switch h3{
     color:aqua;
+    text-align: center;
+    margin: 0 auto;
 }
 
 header.switch h1, header.switch h2{
