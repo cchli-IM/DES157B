@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+     min-height: 100vh;
+
+}
 img {
     max-width: 100%;
     display: block;
@@ -33,46 +37,52 @@ body.switch {
     max-width: 1366px;
     /* make sure the columns don't get too small and text stays readable */
     min-width: 900px;
-    margin: 1em auto;
-    padding-top: 2em;
-}
-
-header {
-    margin: 0 auto 2em auto;
-    right: 10;
-    top: 10;
-}
-
-#banner {
-    position: relative;
-    display: flex;
-    width: 1100px;
-    height: 250px;
     margin: auto;
-    background-color: rgb(235, 235, 235);
-    color: #333;
-    overflow: hidden;
-    display: grid;
-	place-items: center;
+    padding-top: 23%;
+    
 }
 
-#banner.switch {
-    background-color: #333;
-    color: rgb(235, 235, 235);
-    transition: all 2s;
+header h1, header h2 {
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+}
+
+header.switch h1, header.switch h2 {
+    font-family: "Nova Cut", system-ui;
+}
+
+main.switch section {
+    font-family: "Nova Cut", system-ui;
 }
 
 main {
     display: flex;
     justify-content: space-evenly;
-    margin: 1em auto;
+    margin: auto;
+    margin-top: 20px;
 }
 
 main section {
     flex: 1;
-    border: 1px rgb(235, 235, 235) dashed;
+    border: 1px rgb(235, 235, 235) ;
     margin: 0 .25em;
     padding: 1em;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+}
+
+section h3{
+    color: rgb(255, 255, 255);
+}
+section.switch h3{
+    color:aqua;
+}
+
+header.switch h1, header.switch h2{
+    color: rgb(56, 225, 255);
 }
 
 a {
@@ -93,21 +103,27 @@ section a {
     line-height: 1.1em;
     display: inline-block;
     padding: .5em;
-    color: orange;
+    color: rgb(255, 213, 134);
+        font-family: "Jost", sans-serif;
+    font-style: normal;
 }
 
 section a:hover {
-    background-color: orange;
-    color: #333;
+    background-color: rgba(87, 80, 126, 0.603);
+    color: #ffffff;
+    transition: all 0.8s ease;
 }
 
 section.switch a {
-    color: #333;
+    color: #207fbe;
+    font-family: "Nova Cut", system-ui;
 }
 
 section.switch a:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+    box-shadow: 0 0 15px 10px rgba(43, 75, 221, 0.7);
+    color: rgb(0, 0, 0);
+    background-color: rgba(52, 243, 227, 0.842);
+
 }
 
 button {
