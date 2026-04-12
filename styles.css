@@ -16,6 +16,7 @@ img {
 /* Page styling */
 body {
     background-color: #333;
+    background-attachment: fixed;
     color: rgb(235, 235, 235);
     transition: all 2s;
     background-image: url(images/daymode.png);
@@ -38,7 +39,7 @@ body.switch {
     /* make sure the columns don't get too small and text stays readable */
     min-width: 900px;
     margin: auto;
-    padding-top: 23%;
+    padding-top: 20%;
     
 }
 
@@ -68,7 +69,10 @@ main section {
     flex: 1;
     border: 1px rgb(235, 235, 235) ;
     margin: 0 .25em;
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 0;
     text-align: center;
     font-family: "Jost", sans-serif;
     font-style: normal;
@@ -133,13 +137,31 @@ section.switch a:hover {
 
 button {
     position: fixed;
-    top: 135px;
-    left: 75px;
+    bottom: 542px;
+    left: 53px;
     padding: 0;
     background-color: transparent;
     color: #333;
     border: none;
     cursor: pointer;
+    animation: wiggle 0.1s linear 1ms infinite;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(1deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 button img {
