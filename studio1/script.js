@@ -12,6 +12,7 @@
     const line3 = document.querySelector("#line3")
     const line4 = document.querySelector("#line4")
     const lineauthor = document.querySelector("#lineauthor")
+    
 
     fs.addEventListener("click", function(){
         if(!document.fullscreenElement){
@@ -24,6 +25,7 @@
     function checkTime(){
         if( myVideo.currentTime > 0 && myVideo.currentTime < 4){
             line1.className = 'show'
+            
         } else {
             line1.className = 'hidden'
         }
@@ -49,24 +51,7 @@
         }
     }
 
-    document.addEventListener("mousemove", function(event){
-        const mouseX = event.clientX;
-        const mouseY = event.clientY;
-
-        if (mouseX > 0 && mouseX < 294){
-            poem.style.color = "red"
-        } else if(mouseX > 294 && mouseX < 588){
-             poem.style.color = "blue"
-        } else if(mouseX > 588 && mouseX < 882){
-            poem.style.color = "orange"
-        } else if(mouseX > 882 && mouseX < 1176){
-        poem.style.color = "green"
-        } else if(mouseX > 1176 && mouseX < 1470
-        ){
-            poem.style.color = "black"
-       }
-     
-    })
+    
 
   
 
