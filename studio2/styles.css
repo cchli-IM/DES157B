@@ -1,0 +1,36 @@
+.date{
+    width: 100px;
+    height: auto;
+}
+
+.date img {
+    width: 100px;
+    height: auto;
+    
+}
+
+#selections {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 0 0 15px #000;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    background-image: url(images/nightbg.png);
+}
+
+#timeslept, #bedtime{
+    color: white;
+}
+#graphics{
+    display: flex;
+    gap: 20px;
+}
