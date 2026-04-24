@@ -1,33 +1,33 @@
 {
-    "April 13": {
+    "April13": {
         "time": "11:15 PM",
         "status": "normal"
     },
-    "April 14": {
+    "April14": {
         "time": "12:34 AM",
         "status": "energized"
     },
-    "April 15": {
+    "April15": {
         "time": "11:16 PM",
         "status": "normal"
     },
-    "April 16": {
+    "April16": {
         "time": "12:53 AM",
         "status": "normal"
     },
-    "April 17": {
+    "April17": {
         "time": "01:02 AM",
         "status": "groggy"
     },
-    "April 18": {
+    "April18": {
         "time": "02:14 AM",
         "status": "very tired"
     },
-    "April 19": {
+    "April19": {
         "time": "12:43 AM",
         "status": "energized"
     },
-    "April 20": {
+    "April20": {
         "time": "11:24 PM",
         "status": "normal"
     }
