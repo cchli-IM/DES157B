@@ -14,7 +14,7 @@
         'ENERGIZED',
         'NORMAL', 
         'TIRED', 
-        'EXHAUSTED'
+        'EXHAUSTED!!!'
     ]
     const imgContainer = document.querySelector('#statusIMG')
     const descContainer = document.querySelector('#statusDESC');
