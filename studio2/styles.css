@@ -18,10 +18,10 @@
 
 #selections button {
     background: none;
-    border: none;
     cursor: pointer;
     transform: scale(1);
     transition: transform 0.2s ease;
+
 }
 
 #selections button:hover {
@@ -55,7 +55,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 #bed-time, #statusDESC{
@@ -64,18 +64,21 @@ body{
 }
 #graphics{
     display: flex;
-    gap: 20px;
+  
 }
-
+ #statusDESC{
+    text-shadow: 0 0 2px #ff0000;
+    font-size: 50px;
+ }
 #bed-time {   
-     margin-top: 30px;
+    margin-top: 30px;
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-size: 42px;
-    text-shadow: 0 0 25px #ffffff
-
+    text-shadow: 0 0 25px #ffffff;
+    animation: fadeIn 0.5s ease-in;
 }
 
 @keyframes bounce {
@@ -86,7 +89,10 @@ body{
     90%  { transform: scale(0.95); }
     100% { transform: scale(1); }
 }
-
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100%   { opacity: 1; }
+}
 #statusIMG img {
     animation: bounce 0.6s ease-out;
 }
