@@ -16,6 +16,23 @@
     justify-content: center;
 }
 
+#selections button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+}
+
+#selections button:hover {
+    transform: scale(1.15);
+}
+
+#selections button:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease;
+}
+
 header {
     text-align: center;
     color: aliceblue;
@@ -25,12 +42,51 @@ header {
 body{
     background-color: rgb(0, 0, 0);
     background-image: url(images/nightbg.png);
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
-#timeslept, #bedtime{
+#flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#bed-time, #statusDESC{
     color: white;
+   
 }
 #graphics{
     display: flex;
     gap: 20px;
+}
+
+#bed-time {   
+     margin-top: 30px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 42px;
+    text-shadow: 0 0 25px #ffffff
+
+}
+
+@keyframes bounce {
+    0%   { transform: scale(0); }
+    55%  { transform: scale(1.2); }
+    70%  { transform: scale(0.9); }
+    80%  { transform: scale(1.1); }
+    90%  { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}
+
+#statusIMG img {
+    animation: bounce 0.6s ease-out;
 }

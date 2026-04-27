@@ -1,34 +1,34 @@
 {
-    "April13": {
+    "Day1": {
         "time": "11:15 PM",
-        "status": "normal"
+        "status": "1"
     },
-    "April14": {
+    "Day2": {
         "time": "12:34 AM",
-        "status": "energized"
+        "status": "0"
     },
-    "April15": {
+    "Day3": {
         "time": "11:16 PM",
-        "status": "normal"
+        "status": "1"
     },
-    "April16": {
+    "Day4": {
         "time": "12:53 AM",
-        "status": "normal"
+        "status": "1"
     },
-    "April17": {
+    "Day5": {
         "time": "01:02 AM",
-        "status": "groggy"
+        "status": "2"
     },
-    "April18": {
+    "Day6": {
         "time": "02:14 AM",
-        "status": "very tired"
+        "status": "3"
     },
-    "April19": {
+    "Day7": {
         "time": "12:43 AM",
-        "status": "energized"
+        "status": "0"
     },
-    "April20": {
+    "Day8": {
         "time": "11:24 PM",
-        "status": "normal"
+        "status": "1"
     }
 }
