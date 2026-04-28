@@ -95,4 +95,6 @@ body{
 }
 #statusIMG img {
     animation: bounce 0.6s ease-out;
+    width: 60%;
+    height: auto;
 }
