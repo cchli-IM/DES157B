@@ -44,7 +44,6 @@ body{
     background-image: url(images/nightbg.png);
     text-align: center;
     font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 
@@ -73,7 +72,6 @@ body{
 #bed-time {   
     margin-top: 30px;
     font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-size: 42px;
