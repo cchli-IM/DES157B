@@ -1,0 +1,302 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+#cinemabar {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    pointer-events: none; }
+   
+  #cinemabar img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  
+
+   
+  #track-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+   
+  #track {
+    display: flex;
+    flex-direction: row;
+    width: 700vw;  
+    height: 100vh;
+    will-change: transform; 
+  }
+  
+  .scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .scene .bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+   
+  .scene .sun {
+    position: absolute;
+    top: 5%;
+    right: 8%;
+    width: 10vw;
+    z-index: 1;
+  }
+   
+  .scene .cloud {
+    position: absolute;
+    z-index: 2;
+    width: 22vw;
+  }
+
+#cloud2  { 
+    top: 5%;
+    left: 60%; }
+#cloud3  { 
+    top: 10%; 
+    left: 20%; }
+#cloud4  { 
+    top: 6%;  
+    left: 55%; }
+#cloud5  { 
+    top: 9%;  
+    left: 13%; }
+#cloud6  { 
+    top: 7%;  
+    left: 50%; }
+#cloud1b { 
+    top: 8%;  
+    left: 8%;  }
+#cloud2b { 
+    top: 6%;  
+    left: 65%; }
+#cloud3b { 
+    top: 10%; 
+    left: 30%; }
+
+.house {
+  position: absolute;
+  bottom: 13%;     
+  z-index: 3;
+  width: 22vw;
+  height: auto;
+}
+
+/* 2,3 */
+#s2-strawhome,  #s3-strawhome  { 
+    left: 5%;  
+}
+#s2-stickhouse, #s3-stickhouse { 
+    left: 35%; 
+}
+#s2-brickhouse, #s3-brickhouse { 
+    left: 63%; 
+}
+ 
+/* 4 */
+#s4-strawhome { 
+    left: 55%; 
+    width: 26vw; }
+ 
+/* 5 */
+#s5-stickhouse { 
+    left: 55%; 
+    width: 26vw; }
+ 
+/* 6,7 */
+#s6-brickhouse,
+#s7-brickhouse { left: 
+    52%; 
+    width: 28vw; }
+ 
+.prop {
+  position: absolute;
+  z-index: 8;
+  height: auto;
+}
+#cannon {
+    bottom: 10%;
+    left: 12%;
+    width: 22vw;
+  }
+  
+  #cannonball-svg {
+    bottom: 30%;
+    left: 36%;      
+    width: 3.5vw;
+    min-width: 28px;
+  }
+
+.char-container {
+    position: absolute;
+    z-index: 10;
+    width: 11vw;   
+  }
+   
+.char-container svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: visible; 
+  }
+  
+.drag-prompt {
+  position: absolute;
+  bottom: 14%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  opacity: 0; 
+ 
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font-family: "Comic Sans MS", "Chalkboard SE", cursive;
+  font-size: clamp(14px, 2vw, 22px);
+  padding: 0.5em 1.2em;
+  border-radius: 999px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+#fire-btn {
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    opacity: 0; 
+   
+    background: #e63228;
+    color: #fff;
+    font-family: "Comic Sans MS", "Chalkboard SE", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0.5em 1.8em;
+    border: 4px solid #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    transition: background 0.13s, transform 0.1s;
+  }
+   
+  #fire-btn:hover:not(:disabled) {
+    background: #c0271e;
+    transform: translateX(-50%) scale(1.06);
+  }
+   
+  #fire-btn:active:not(:disabled) {
+    transform: translateX(-50%) scale(0.97);
+  }
+   
+  #fire-btn:disabled {
+    opacity: 0.55;
+    cursor: default;
+  }
+
+
+  .draggable-pig {
+    cursor: grab;
+  }
+   
+  .draggable-pig:active {
+    cursor: grabbing;
+  }
+  
+  
+  /* Wolf */
+#scene1-wolf { 
+    bottom: 10%; 
+    left: 38%; 
+    width: 19vw; 
+}
+#scene2-wolf { 
+    bottom: 10%; 
+    left: 3%;  
+    width: 19vw; 
+}
+#scene3-wolf { 
+    bottom: 10%; 
+    left: 3%;  
+    width: 19vw; 
+}
+#scene4-wolf { 
+    bottom: 10%; 
+    left: 4%;  
+    width: 19vw; 
+}
+#scene5-wolf { 
+    bottom: 10%; 
+    left: 4%;  
+    width: 19vw;
+ }
+#scene6-wolf { 
+    bottom: 10%; 
+    left: 4%;  
+    width: 19vw; 
+}
+#scene7-wolf { 
+    bottom: 10%; 
+    left: 4%;  
+    width: 19vw; 
+}
+ 
+/* Pig 1 */
+#scene2-pig1 { 
+    bottom: 13%; 
+    left: 12%; 
+}
+#scene3-pig1 { 
+    bottom: 13%; 
+    left: 10%; 
+}
+#scene4-pig1 { 
+    bottom: 13%; 
+    left: 60%; 
+}
+
+ 
+/* Pig 2 */
+#scene2-pig2 { 
+    bottom: 13%; 
+    left: 43%; 
+}
+#scene3-pig2 { 
+    bottom: 13%; 
+    left: 43%; 
+}
+#scene5-pig2 { 
+    bottom: 13%; 
+    left: 60%; 
+}
+ 
+/* Pig 3 */
+#scene2-pig3 { 
+    bottom: 13%; 
+    left: 72%; 
+}
+#scene3-pig3 { 
+    bottom: 13%; 
+    left: 72%; 
+}
+#scene6-pig3 { 
+    bottom: 13%; 
+    left: 62%;
+    opacity: 0;
+}
+#scene7-pig3 { 
+    bottom: 13%; 
+    left: 60%; 
+}
