@@ -3,6 +3,19 @@ html, body {
     padding: 0;
     overflow-x: hidden;
   }
+  h1{
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", "Chalkboard SE", cursive;
+    font-size: 42px;
+    color: #f8efef;
+    text-align: center;
+    z-index: 101;
+    position: fixed;
+    top: 1%; 
+    left: 50%; 
+    transform: translateX(-50%)
+  }
 #cinemabar {
     position: fixed;
     inset: 0;
@@ -224,7 +237,7 @@ html, body {
 }
 
 footer a {
-  color: #fff;
+  color: #49e7ff;
   font-size: 30px;
   text-decoration: none;
   opacity: 0.85;
