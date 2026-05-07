@@ -211,9 +211,25 @@ html, body {
     cursor: grab;
   }
    
-  .draggable-pig:active {
-    cursor: grabbing;
-  }
+  footer {
+  position: fixed;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 101;
+  display: flex;
+  gap:20px;
+  
+
+}
+
+footer a {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  opacity: 0.85;
+  padding: 0 20px;
+}
   
   
   /* Wolf */
