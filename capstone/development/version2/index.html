@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -19,53 +18,86 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script type="module" src="script.js" defer></script>
-    <title>Version 1</title>
+    <title>BFC // TSO-2089-001</title>
 </head>
 <body>
-    <div id="terminal">
- 
+
+    <!-- SPLASH -->
+    <div id="splash">
+        <div id="notification">
+            <div id="notif-header">
+                <span id="notif-indicator"></span>
+                <span>INCOMING TRANSMISSION // PRIORITY ALPHA</span>
+            </div>
+            <div id="notif-body">
+                <p>CASE ASSIGNMENT: <strong>TSO-2089-001</strong></p>
+                <p>A brief has been prepared for your review. Physical evidence recovered from Displacement Zone 7 requires classification and documentation before the archive closes.</p>
+                <p>Your analysis is required.</p>
+            </div>
+            <div id="notif-footer">
+                <span id="notif-timestamp"></span>
+                <button id="btn-view">VIEW</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- BRIEF -->
+    <div id="brief" class="hidden">
+        <div id="brief-inner">
+            <div id="brief-header">
+                <span>BFC SECURE TERMINAL</span>
+                <span class="divider">//</span>
+                <span>CASE BRIEF — TSO-2089-001</span>
+            </div>
+            <div id="brief-text"></div>
+            <button id="btn-enter" class="hidden">ENTER ARCHIVE &gt;</button>
+        </div>
+    </div>
+
+    <!-- TERMINAL -->
+    <div id="terminal" class="hidden">
+
         <!-- top bar -->
         <header id="top-bar">
             <span id="agency-name">BFC SECURE TERMINAL</span>
             <span class="divider">//</span>
             <span id="case-id">CASE FILE TSO-2089-001</span>
-         
         </header>
- 
+
         <!-- main -->
         <main id="main-panel">
- 
+
             <!-- 3D -->
             <section id="viewer-panel">
                 <div id="viewer-label">3D ARTIFACT VIEWER</div>
                 <div id="viewer-hint">ROTATE / ZOOM ENABLED</div>
                 <canvas id="three-canvas"></canvas>
             </section>
- 
+
             <!-- bottom: desc + data -->
             <div id="bottom-row">
- 
+
                 <section id="description-panel">
                     <div class="panel-label">ARTIFACT DESCRIPTION</div>
                     <div class="panel-content" id="description-text"></div>
                 </section>
- 
+
                 <section id="intelligence-panel">
                     <div class="panel-label">CURRENT INTELLIGENCE</div>
                     <div class="panel-content" id="intelligence-text"></div>
                 </section>
- 
+
             </div>
- 
+
         </main>
- 
+
         <!-- nav -->
         <nav id="nav-bar">
             <button id="btn-prev">&lt; PREV ITEM</button>
             <span id="item-counter">ITEM <span id="item-current">1</span> OF <span id="item-total">5</span></span>
             <button id="btn-next">NEXT ITEM &gt;</button>
         </nav>
- 
+
     </div>
 
 </body>

@@ -1,7 +1,3 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 html, body {
     height: 100%;
     margin: 0;
@@ -11,7 +7,7 @@ html, body {
     font-size: 13px;
     letter-spacing: 0.04em;
 }
-
+ 
 #terminal {
     display: flex;
     flex-direction: column;
@@ -22,7 +18,7 @@ html, body {
     border-right: 1px solid #3a3a3a;
     background: #1a1a1a;
 }
-
+ 
 #top-bar {
     display: flex;
     align-items: center;
@@ -35,27 +31,27 @@ html, body {
     letter-spacing: 0.1em;
     flex-shrink: 0;
 }
-
+ 
 #agency-name {
     color: #c8c8c8;
-    font-weight: 700;
+    font-weight: 500;
 }
-
+ 
 .divider {
     color: #666;
 }
-
+ 
 #case-id {
     color: #666;
 }
-
+ 
 #system-clock {
     margin-left: auto;
     color: #c89a00;
     font-size: 10px;
     letter-spacing: 0.12em;
 }
-
+ 
 #main-panel {
     flex: 1;
     display: flex;
@@ -65,7 +61,7 @@ html, body {
     overflow: hidden;
     min-height: 0;
 }
-
+ 
 #viewer-panel {
     position: relative;
     flex: 1;
@@ -74,7 +70,7 @@ html, body {
     min-height: 0;
     overflow: hidden;
 }
-
+ 
 #viewer-label {
     position: absolute;
     top: 10px;
@@ -85,7 +81,7 @@ html, body {
     pointer-events: none;
     z-index: 1;
 }
-
+ 
 #viewer-hint {
     position: absolute;
     top: 10px;
@@ -96,48 +92,48 @@ html, body {
     pointer-events: none;
     z-index: 1;
 }
-
+ 
 #three-canvas {
     width: 100% !important;
     height: 100% !important;
     display: block;
 }
-
+ 
 #bottom-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 6px;
     flex: 0 0 320px;
 }
-
+ 
 #description-panel,
 #intelligence-panel {
-    background: #0c0c0c;
-    border: 1px solid #353e67;
+    background: #222222;
+    border: 1px solid #3a3a3a;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
-
+ 
 #intelligence-panel {
     border-color: #7a5e00;
-    background: #0c0c0c;
+    background: #201c00;
 }
-
+ 
 .panel-label {
     font-size: 10px;
     letter-spacing: 0.14em;
     padding: 7px 12px 6px;
     border-bottom: 1px solid #3a3a3a;
-    color: #bcbcbc;
+    color: #666;
     flex-shrink: 0;
 }
-
+ 
 #intelligence-panel .panel-label {
     border-bottom-color: #7a5e00;
     color: #c89a00;
 }
-
+ 
 .panel-content {
     font-family: 'Courier Prime', monospace;
     font-size: 12px;
@@ -147,11 +143,11 @@ html, body {
     flex: 1;
     color: #c8c8c8;
 }
-
+ 
 #intelligence-panel .panel-content {
     color: #c89a00;
 }
-
+ 
 #nav-bar {
     display: flex;
     align-items: center;
@@ -162,13 +158,13 @@ html, body {
     border-top: 1px solid #3a3a3a;
     flex-shrink: 0;
 }
-
+ 
 #item-counter {
     font-size: 11px;
     letter-spacing: 0.1em;
-    color: #bbbbbb;
+    color: #666;
 }
-
+ 
 #btn-prev,
 #btn-next {
     background: none;
@@ -181,8 +177,199 @@ html, body {
     padding: 6px 10px;
     transition: color 0.15s;
 }
-
+ 
 #btn-prev:hover,
 #btn-next:hover {
     color: #c8c8c8;
+}
+ 
+ 
+ 
+/* ─── SHARED SCREEN UTILITY ──────────────────────────────────────────────── */
+.hidden {
+    display: none !important;
+}
+ 
+/* ─── SPLASH ─────────────────────────────────────────────────────────────── */
+#splash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #111;
+}
+ 
+#notification {
+    width: 480px;
+    border: 1px solid #3a3a3a;
+    background: #1a1a1a;
+    font-family: 'IBM Plex Mono', monospace;
+}
+ 
+#notif-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: #222;
+    border-bottom: 1px solid #3a3a3a;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: #c8c8c8;
+}
+ 
+#notif-indicator {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #c89a00;
+    animation: blink 1.2s step-start infinite;
+    flex-shrink: 0;
+}
+ 
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+ 
+#notif-body {
+    padding: 18px 14px;
+    font-family: 'Courier Prime', monospace;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #aaa;
+}
+ 
+#notif-body p {
+    margin: 0 0 10px;
+}
+ 
+#notif-body p:last-child {
+    margin-bottom: 0;
+}
+ 
+#notif-body strong {
+    color: #c8c8c8;
+}
+ 
+#notif-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    border-top: 1px solid #3a3a3a;
+    background: #222;
+}
+ 
+#notif-timestamp {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: #555;
+}
+ 
+#btn-view {
+    background: none;
+    border: 1px solid #555;
+    color: #c8c8c8;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    padding: 5px 16px;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+}
+ 
+#btn-view:hover {
+    border-color: #c89a00;
+    color: #c89a00;
+}
+ 
+/* ─── BRIEF ──────────────────────────────────────────────────────────────── */
+#brief {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    background: #111;
+    padding: 60px 20px;
+}
+ 
+#brief-inner {
+    width: 100%;
+    max-width: 680px;
+}
+ 
+#brief-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: #555;
+    margin-bottom: 40px;
+}
+ 
+#brief-text {
+    font-family: 'Courier Prime', monospace;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #c8c8c8;
+    white-space: pre-wrap;
+    margin: 0 0 40px;
+}
+ 
+#brief-text .typed-cursor {
+    display: inline;
+    font-size: 14px;
+    line-height: 1;
+    vertical-align: baseline;
+}
+ 
+#btn-enter {
+    display: block;
+    background: none;
+    border: none;
+    color: #c89a00;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    padding: 0;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+ 
+#btn-enter:hover {
+    opacity: 0.7;
+}
+ 
+ 
+/* ─── CITATIONS ───────────────────────────────────────────────────────────── */
+.intel-body {
+    margin: 0 0 12px;
+}
+ 
+.citation-block {
+    border-top: 1px solid #7a5e00;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+ 
+.citation {
+    font-size: 10px;
+    line-height: 1.5;
+    color: #7a6020;
+}
+ 
+.citation a {
+    color: #c89a00;
+    text-decoration: none;
+    word-break: break-all;
+}
+ 
+.citation a:hover {
+    text-decoration: underline;
+
 }
