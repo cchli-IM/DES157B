@@ -7,7 +7,7 @@ html, body {
     font-size: 13px;
     letter-spacing: 0.04em;
 }
- 
+
 #terminal {
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@ html, body {
     border-right: 1px solid #3a3a3a;
     background: #1a1a1a;
 }
- 
+
 #top-bar {
     display: flex;
     align-items: center;
@@ -31,27 +31,27 @@ html, body {
     letter-spacing: 0.1em;
     flex-shrink: 0;
 }
- 
+
 #agency-name {
     color: #c8c8c8;
     font-weight: 500;
 }
- 
+
 .divider {
     color: #666;
 }
- 
+
 #case-id {
     color: #666;
 }
- 
+
 #system-clock {
     margin-left: auto;
     color: #c89a00;
     font-size: 10px;
     letter-spacing: 0.12em;
 }
- 
+
 #main-panel {
     flex: 1;
     display: flex;
@@ -61,7 +61,7 @@ html, body {
     overflow: hidden;
     min-height: 0;
 }
- 
+
 #viewer-panel {
     position: relative;
     flex: 1;
@@ -70,7 +70,7 @@ html, body {
     min-height: 0;
     overflow: hidden;
 }
- 
+
 #viewer-label {
     position: absolute;
     top: 10px;
@@ -81,7 +81,7 @@ html, body {
     pointer-events: none;
     z-index: 1;
 }
- 
+
 #viewer-hint {
     position: absolute;
     top: 10px;
@@ -92,20 +92,20 @@ html, body {
     pointer-events: none;
     z-index: 1;
 }
- 
+
 #three-canvas {
     width: 100% !important;
     height: 100% !important;
     display: block;
 }
- 
+
 #bottom-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6px;
     flex: 0 0 320px;
 }
- 
+
 #description-panel,
 #intelligence-panel {
     background: #222222;
@@ -114,12 +114,12 @@ html, body {
     flex-direction: column;
     overflow: hidden;
 }
- 
+
 #intelligence-panel {
     border-color: #7a5e00;
     background: #201c00;
 }
- 
+
 .panel-label {
     font-size: 10px;
     letter-spacing: 0.14em;
@@ -128,12 +128,12 @@ html, body {
     color: #666;
     flex-shrink: 0;
 }
- 
+
 #intelligence-panel .panel-label {
     border-bottom-color: #7a5e00;
     color: #c89a00;
 }
- 
+
 .panel-content {
     font-family: 'Courier Prime', monospace;
     font-size: 12px;
@@ -143,11 +143,11 @@ html, body {
     flex: 1;
     color: #c8c8c8;
 }
- 
+
 #intelligence-panel .panel-content {
     color: #c89a00;
 }
- 
+
 #nav-bar {
     display: flex;
     align-items: center;
@@ -158,13 +158,13 @@ html, body {
     border-top: 1px solid #3a3a3a;
     flex-shrink: 0;
 }
- 
+
 #item-counter {
     font-size: 11px;
     letter-spacing: 0.1em;
     color: #666;
 }
- 
+
 #btn-prev,
 #btn-next {
     background: none;
@@ -177,19 +177,58 @@ html, body {
     padding: 6px 10px;
     transition: color 0.15s;
 }
- 
+
 #btn-prev:hover,
 #btn-next:hover {
     color: #c8c8c8;
 }
- 
- 
- 
-/* ─── SHARED SCREEN UTILITY ──────────────────────────────────────────────── */
+
+
+
+/* ─── BACK BUTTON ────────────────────────────────────────────────────────── */
+.back-btn {
+    background: none;
+    border: none;
+    color: #555;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.15s;
+    flex-shrink: 0;
+}
+
+.back-btn:hover {
+    color: #c8c8c8;
+}
+
+/* ─── BRIEF ACTIONS ROW ──────────────────────────────────────────────────── */
+#brief-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#brief-actions #btn-brief-back {
+    background: none;
+    border: none;
+    color: #555;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.15s;
+}
+
+#brief-actions #btn-brief-back:hover {
+    color: #c8c8c8;
+}
 .hidden {
     display: none !important;
 }
- 
+
 /* ─── SPLASH ─────────────────────────────────────────────────────────────── */
 #splash {
     display: flex;
@@ -198,14 +237,14 @@ html, body {
     height: 100vh;
     background: #111;
 }
- 
+
 #notification {
     width: 480px;
     border: 1px solid #3a3a3a;
     background: #1a1a1a;
     font-family: 'IBM Plex Mono', monospace;
 }
- 
+
 #notif-header {
     display: flex;
     align-items: center;
@@ -217,7 +256,7 @@ html, body {
     letter-spacing: 0.12em;
     color: #c8c8c8;
 }
- 
+
 #notif-indicator {
     width: 7px;
     height: 7px;
@@ -226,12 +265,12 @@ html, body {
     animation: blink 1.2s step-start infinite;
     flex-shrink: 0;
 }
- 
+
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
- 
+
 #notif-body {
     padding: 18px 14px;
     font-family: 'Courier Prime', monospace;
@@ -239,19 +278,19 @@ html, body {
     line-height: 1.7;
     color: #aaa;
 }
- 
+
 #notif-body p {
     margin: 0 0 10px;
 }
- 
+
 #notif-body p:last-child {
     margin-bottom: 0;
 }
- 
+
 #notif-body strong {
     color: #c8c8c8;
 }
- 
+
 #notif-footer {
     display: flex;
     align-items: center;
@@ -260,13 +299,13 @@ html, body {
     border-top: 1px solid #3a3a3a;
     background: #222;
 }
- 
+
 #notif-timestamp {
     font-size: 10px;
     letter-spacing: 0.1em;
     color: #555;
 }
- 
+
 #btn-view {
     background: none;
     border: 1px solid #555;
@@ -278,12 +317,12 @@ html, body {
     cursor: pointer;
     transition: border-color 0.15s, color 0.15s;
 }
- 
+
 #btn-view:hover {
     border-color: #c89a00;
     color: #c89a00;
 }
- 
+
 /* ─── BRIEF ──────────────────────────────────────────────────────────────── */
 #brief {
     display: flex;
@@ -293,12 +332,12 @@ html, body {
     background: #111;
     padding: 60px 20px;
 }
- 
+
 #brief-inner {
     width: 100%;
     max-width: 680px;
 }
- 
+
 #brief-header {
     display: flex;
     align-items: center;
@@ -309,7 +348,7 @@ html, body {
     color: #555;
     margin-bottom: 40px;
 }
- 
+
 #brief-text {
     font-family: 'Courier Prime', monospace;
     font-size: 14px;
@@ -318,14 +357,14 @@ html, body {
     white-space: pre-wrap;
     margin: 0 0 40px;
 }
- 
+
 #brief-text .typed-cursor {
     display: inline;
     font-size: 14px;
     line-height: 1;
     vertical-align: baseline;
 }
- 
+
 #btn-enter {
     display: block;
     background: none;
@@ -338,17 +377,17 @@ html, body {
     cursor: pointer;
     transition: opacity 0.15s;
 }
- 
+
 #btn-enter:hover {
     opacity: 0.7;
 }
- 
- 
+
+
 /* ─── CITATIONS ───────────────────────────────────────────────────────────── */
 .intel-body {
     margin: 0 0 12px;
 }
- 
+
 .citation-block {
     border-top: 1px solid #7a5e00;
     padding-top: 8px;
@@ -356,20 +395,134 @@ html, body {
     flex-direction: column;
     gap: 6px;
 }
- 
+
 .citation {
     font-size: 10px;
     line-height: 1.5;
     color: #7a6020;
 }
- 
+
 .citation a {
     color: #c89a00;
     text-decoration: none;
     word-break: break-all;
 }
- 
+
 .citation a:hover {
     text-decoration: underline;
+}
 
+
+/* ─── CONCLUDE BAR ───────────────────────────────────────────────────────── */
+#conclude-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a1400;
+    border-top: 1px solid #7a5e00;
+    border-bottom: 1px solid #7a5e00;
+    padding: 10px;
+}
+
+#btn-conclude {
+    background: none;
+    border: none;
+    color: #c89a00;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    cursor: pointer;
+    padding: 0;
+    animation: blink 1.2s step-start infinite;
+}
+
+#btn-conclude:hover {
+    animation: none;
+    opacity: 0.7;
+}
+
+/* ─── CONCLUSION SCREEN ──────────────────────────────────────────────────── */
+#conclusion {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 960px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    border-left: 1px solid #3a3a3a;
+    border-right: 1px solid #3a3a3a;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#conclusion-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 38px;
+    padding: 0 14px;
+    background: #222;
+    border-bottom: 1px solid #3a3a3a;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: #c8c8c8;
+    flex-shrink: 0;
+}
+
+#conclusion-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 48px;
+    gap: 36px;
+}
+
+#conclusion-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-bottom: 1px solid #3a3a3a;
+    padding-bottom: 28px;
+}
+
+#conclusion-meta p {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: #aaa;
+}
+
+#conclusion-meta p:first-child {
+    color: #c8c8c8;
+    margin-bottom: 10px;
+}
+
+#action-label {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#action-field {
+    border: 1px solid #3a3a3a;
+    background: #111;
+    padding: 12px 14px;
+    min-height: 80px;
+    color: #c8c8c8;
+}
+
+#action-cursor {
+    display: inline-block;
+    animation: blink 1.2s step-start infinite;
+}
+
+#action-note {
+    margin: 14px 0 0;
+    font-family: 'Courier Prime', monospace;
+    font-style: italic;
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    line-height: 1.7;
 }
