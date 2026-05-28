@@ -24,7 +24,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         
         They were recovered from sites across the western United States on Thursday, October 23, 2025. 
         
-        This archive was assembled as a record of what was allowed to happen to our future. The objects speak to choices made decades before 2089 — in policy rooms, in boardrooms, in elections, when the window to act was still open.
+        This archive was assembled as a record of what was allowed to happen to our future. The objects speak to choices made decades before 2089, in policy rooms, in boardrooms, in elections, when the window to act was still open.
         
         Your task is to review these items and propose a plan to change this reality.
         
