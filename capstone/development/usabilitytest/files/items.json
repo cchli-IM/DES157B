@@ -1,0 +1,56 @@
+[
+    {
+        "id": "EVID_2089_001",
+        "dateLogged": "2089.03.04",
+        "condition": "INTACT",
+        "title": "DAILY RATION CARD — ORGANIC BBQ CRIX CHIPS",
+        "model": "models/ration_card.glb",
+        "description": "A laminated identification card issued by NutriCore Solutions LLC under federal emergency food rationing protocols. Stamped with a single day's allocation. The reverse side features a corporate logo and the slogan: 'Nutrition, Simplified.' Accompanying the card is a sealed foil bag, Organic BBQ Crix Chips, 42g net weight. Ingredients include processed cricket flour, artificial smoke flavoring, and seventeen stabilizers. The bag design is deliberately familiar. The contents are not.",
+        "intelligence": "'Every additional degree Celsius of global warming reduces global food production capacity by approximately 120 calories per person per day, roughly 4.4% of current daily consumption. Even when farmers adapt by switching crop varieties and shifting planting schedules, those adjustments only offset about one third of climate-related losses. Under high-emissions scenarios, global crop yields could be 24% lower by 2100. The US Midwest corn and soybean belt is among the hardest hit regions.'",
+        "citation": ["Hultgren, Andrew, et al. \"Climate Change Cuts Global Crop Yields, Even When Farmers Adapt.\" Stanford Doerr School of Sustainability, 18 June 2025. https://sustainability.stanford.edu/news/climate-change-cuts-global-crop-yields-even-when-farmers-adapt"]
+    },
+    {
+        "id": "EVID_2089_002",
+        "dateLogged": "2089.03.04",
+        "condition": "HEAVILY WORN",
+        "title": "PERSONAL WATER FILTRATOR — AQUAVANCE MK.4",
+        "model": "models/water_filtrator.glb",
+        "description": "Handheld water purification device manufactured by AquaVance Corp under a federal emergency supply contract. The filter housing is cracked along one side and repaired with adhesive wrap. The internal membrane shows heavy discoloration from prolonged exposure to contaminated source water. A sticker on the base reads: 'For use with AquaVance Certified Water Sources only. Warranty void if used with municipal runoff, industrial grey water, or flood-origin supply.' The sticker has been scratched off. Most local water sources have dried up from long-term drought or are undrinkable from pollution. The few remaining sources are heavily regulated by government entities and licensed to private corporations. It was used with all of them.",
+        "intelligence": "Over two billion people worldwide currently lack access to safe drinking water, and roughly half the world's population already experiences severe water scarcity for at least part of the year, numbers expected to grow. Only 0.5 percent of all water on Earth is usable freshwater, and climate change is rapidly eroding even that. Over the past twenty years, terrestrial water storage, including soil moisture, snow, and ice, has dropped at a rate of one centimeter per year. Since 2000, flood-related disasters have surged by 134 percent compared to the two prior decades, while the number and duration of droughts increased by 29 percent over the same period. Water-related disasters now account for 70 percent of all deaths caused by natural disasters globally.",
+        "citation": ["\"Water and Climate Change.\" United Nations Climate Change, United Nations. https://www.un.org/en/climatechange/science/climate-issues/water"]
+    },
+    {
+        "id": "EVID_2089_003",
+        "dateLogged": "2089.03.04",
+        "condition": "WATER DAMAGED",
+        "title": "ASPHALT FRAGMENT — COASTAL ORIGIN",
+        "model": "models/asphalt.glb",
+        "description": "A section of road-grade asphalt, approximately 18cm across. The fracture pattern is consistent with long-term submersion and structural degradation from saltwater intrusion. A faded painted line, white, possibly a crosswalk or lane marking is still partially visible on the upper surface. Residents from such coastal regions have been forced to evacuate out of safety concerns as streets, infrastructure, and entire neighborhoods are reclaimed by rising water. Recovered from a coastal urban area. The city it came from is not named in the manifest. Based on aggregate composition, geological analysis places its origin somewhere along the California coast.",
+        "intelligence": "More than thirty years of satellite measurement have confirmed that global sea level has risen approximately 9 centimeters since the early 1990s, nearly matching what 1990s climate models predicted, but with one significant underestimation: ice sheet melt exceeded projections by more than 2 centimeters, driven by warming ocean waters destabilizing the Antarctic Ice Sheet from below and faster-than-expected ice flow from Greenland. Critically, NASA data confirmed in 2024 that the rate of sea-level rise has doubled over that 30-year monitoring period. Sea level does not rise uniformly, regional variation is significant, and low-lying coastal areas in the United States face particular exposure. Current projections now account for the possibility, uncertain but non-negligible, of catastrophic ice-sheet collapse before the end of this century.",
+        "citation": [
+            "Törnqvist, Torbjörn, and Sönke Dangendorf. \"Satellites Confirm 1990s Sea-Level Predictions Were Shockingly Accurate.\" ScienceDaily, Tulane University, 6 Sept. 2025. https://www.sciencedaily.com/releases/2025/09/250906013453.htm",
+            "Sea Level Rise and Coastal Flooding. Online video transcript, YouTube. https://www.youtube.com/watch?v=rdzsh8AETnM"
+        ]
+    },
+    {
+        "id": "EVID_2089_004",
+        "dateLogged": "2089.03.04",
+        "condition": "FIRE DAMAGED",
+        "title": "FLAMME PRO 3 — CIVILIAN FIRE RETARDANT GRENADE",
+        "model": "models/fire_grenade.glb",
+        "description": "Consumer-grade fire retardant grenade manufactured by Flamme Defense Systems. The canister is scorched on one end and the safety pin has been pulled. Product description on the label reads: 'Ensures complete fire retardation in a 10ft radius. Protection of life and property from a safe distance. Flamme Launcher sold separately.'",
+
+        "intelligence": "Wildfires have more than doubled worldwide over the last 21 years, with fire seasons starting earlier in spring and extending later into autumn. In the United States, years where over 10 million acres burned, once considered catastrophic, are now routine. Drier conditions driven by rising temperatures ignite dead vegetation at increasing rates. Fires burning through wildland-urban interface areas release toxic pollutants far beyond what vegetation fires alone produce, including arsenic, lead, and volatile organic compounds from burning structures. Forty years ago, five million acres burned in a year would have stood out as particularly bad. That figure now represents a mild season.",
+        "citation": ["Green, Fiona. \"How and Why Wildfires Are Becoming More Common: Looking at the Past 10 Years of Wildfire Seasons in North America.\" Clarity Movement, 25 June 2025. https://www.clarity.io/blog/how-and-why-wildfires-are-becoming-more-common-looking-at-the-past-10-years-of-wildfire-seasons-in-north-america"]
+    },
+    {
+        "id": "EVID_2089_005",
+        "dateLogged": "2089.03.04",
+        "condition": "RETURNED — MODERATE WEAR",
+        "title": "PERSONAL COOLING VEST — COOLCORE RENTAL UNIT",
+        "model": "models/cooling_vest.glb",
+        "description": "Wearable personal cooling vest manufactured and distributed by CoolCore Solutions under a municipal heat emergency contract. A rental tag is still attached to the zipper pull — daily rate, weekly rate, and a late return fee in fine print. A label inside the collar reads: 'Not a substitute for cooling center access. CoolCore is not liable for heat-related illness sustained during use.' As temperatures regularly exceed survivable thresholds, personal cooling equipment has become a basic necessity managed and monetized by private contractors. The rental tag suggests it was returned. The condition of the interior lining suggests it was returned just in time.",
+        "intelligence": "The year 2024 was the hottest on record globally, with average temperatures more than 1.5 degrees Celsius above the pre-industrial baseline. The entire decade from 2015 to 2024 was the hottest ten-year period ever recorded. In US cities, extreme heat events have increased from 2 per year in the 1960s to 10 per year between 2010 and 2020, and the heat season has grown by 46 days since that decade. Heat-related deaths in the United States increased by more than 50 percent between 2000 and 2025, making heat the deadliest weather-related cause of death in the country.",
+        "citation": ["\"Extreme Heat and Climate Change.\" Center for Climate and Energy Solutions, Feb. 2026. https://www.c2es.org/content/heat-waves-and-climate-change/"]
+    }
+]

@@ -10,6 +10,19 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     let current = 0;
     const viewed = new Set();
     let currentModel = null;
+
+    //  USABILITY TEST
+    document.querySelector('#btn-tester-dismiss').addEventListener('click', function() {
+        document.querySelector('#tester-overlay').className = 'hidden';
+    });
+ 
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            document.querySelector('#tester-overlay').className = 'hidden';
+        }
+    });
+
+
  
     //   BRIEF TEXT   
     const briefText =
