@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Usability Results</title>
+</head>
+<body>
+     <header>
+        <h1>Usability Testing &amp; Results</h1>
+    </header>
+
+ 
+    <div class="observation">
+        <p class="label">Observation 01</p>
+        <h2>Lack of visual hierarchy among headers and interactive elements</h2>
+        <p>Testers noted very little visual differentiation among headers, making it difficult to scan the interface and understand the structure of information at a glance. The coloration of certain elements compounded this issue — important interactive functions and contextual labels blended into the background or were too visually similar to decorative elements, causing confusion about what was actionable and what was not.</p>
+    </div>
+ 
+    <div class="observation">
+        <p class="label">Observation 02</p>
+        <h2>No method to reset the 3D artifact viewer</h2>
+        <p>Once a viewer rotates or zooms the 3D object out of its default position, there is no way to return it to the original angle and framing. If the object is moved out of frame entirely, it cannot be relocated without refreshing the entire page, which disrupts the investigation flow and unexpectedly resets progress.</p>
+    </div>
+ 
+    <div class="observation">
+        <p class="label">Observation 03</p>
+        <h2>Conclusion page intent is not communicated clearly</h2>
+        <p>The conclusion page does not immediately convey what it is asking the viewer to do. The blinking cursor proved misleading — testers assumed the entire page was an interactive input field rather than understanding that only the recommended action box was intended for a typed response. The page required verbal explanation from the presenter to be understood, which means the design is not yet self-sufficient.</p>
+    </div>
+ 
+    <div class="observation">
+        <p class="label">Observation 04</p>
+        <h2>Text density reduces readability across panels</h2>
+        <p>The body text across both the artifact description and intelligence panels reads as too dense. There is insufficient spacing between ideas, and the absence of subtitles means longer passages have no internal structure. Testers struggled to absorb the content quickly, which works against the pace of the investigation experience.</p>
+    </div>
+ 
+ 
+
+ 
+    <div class="prompt">
+        <p class="label">What aspects of the project need to be improved?</p>
+        <p>The most pressing areas for improvement are visual hierarchy and the conclusion page. The interface currently treats headers, labels, interactive elements, and decorative elements at nearly the same visual weight, making it difficult to know where to look or what to do at any given moment. This affects almost every screen and undermines the credibility of the interface.</p>
+        <p>The conclusion page is the second critical area. As the emotional endpoint of the entire experience, it currently fails to communicate its purpose without outside explanation.</p>
+    </div>
+
+
+    <div class="prompt">
+            <p class="label">Can users figure out how to navigate and interact with the project?</p>
+        <p>The overall navigation between items was considered relatively intuitive — testers were able to move forward and backward through the evidence list without instruction. The core flow of the experience did not require explanation to complete.</p>
+        <p>However, the 3D viewer lacked a recovery mechanism. Viewers who accidentally moved the object out of frame had no obvious path back to the default view, which introduced frustration into an otherwise smooth flow.</p>
+    </div>
+ 
+    <div class="prompt">
+        <p class="label">Does the project impact the viewer the way it intends to?</p>
+        <p>Viewers had difficulty recognizing the correct temporal framing. Several testers understood the project as the future looking back at the past, rather than the present looking forward into a potential future. This is the central message of the project and it did not land clearly enough.</p>
+        <p>The distinction matters significantly. The entire cautionary purpose of the project depends on the viewer understanding that they are a contemporary person receiving a warning — that this future has not happened yet and is still preventable. Without that framing, the emotional impact reads as historical rather than urgent.</p>
+    </div>
+ 
+    <div class="prompt">
+        <p class="label">What modifications need to be made to make the project stronger?</p>
+        <p>The color system needs a clear hierarchy — one treatment for interactive elements, a separate one for contextual labels, and a distinct treatment for decorative elements. Currently these overlap too much, which reduces trust in the interface.</p>
+        <p>The 3D viewer needs a reset button that returns the object to its default position. The conclusion page needs to be redesigned from the ground up, with explicit labeling and no decorative use of the blinking cursor. Text within the panels should be broken into shorter paragraphs with visible spacing and subtitles where content spans multiple ideas.</p>
+    </div>
+ 
+    <div class="prompt">
+        <p class="label">Plan for updating the project based on feedback</p>
+        <ul>
+            <li>Establish a clear color hierarchy across the interface — differentiate interactive elements, contextual labels, and decorative elements so each tier is immediately distinguishable.</li>
+            <li>Add a reset button to the 3D artifact viewer that returns the camera and object to the default position and zoom level with a single click.</li>
+            <li>Redesign the conclusion page entirely — remove decorative use of the blinking cursor, add a clear statement of purpose, and label the recommended action field with explicit instruction.</li>
+            <li>Reformat body text across all panels with shorter paragraphs, increased spacing between sections, and subtitles where content spans multiple ideas.</li>
+            <li>Strengthen the temporal framing in the opening screens so it is unambiguous that the viewer is a contemporary person receiving a warning from a future that has not happened yet.</li>
+        </ul>
+    </div>
+
+     <div class="video-section">
+    <h2>Screen Recording</h2>
+    <div class="video-wrapper">
+        <video controls playsinline>
+            <source src="recording.mp4" type="video/mp4">
+            <p>Your browser doesn't support HTML5 video. Here is a <a href="recording.mp4">link to the video instead</a>.</p>
+        </video>
+    </div>
+    <p class="video-caption">Usability test session recording</p>
+</div>
+
+
+</body>
+</html>
