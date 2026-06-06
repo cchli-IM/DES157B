@@ -134,7 +134,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             document.querySelector('#conclude-bar').classList.remove('hidden');
         }
 
-        loadModel('objects/testcube.glb');
+        loadModel(item.model);
     }
  
     //   3D MODEL LOADER
