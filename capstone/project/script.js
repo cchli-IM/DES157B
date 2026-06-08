@@ -97,10 +97,10 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     function splitIntoParagraphs(text) {
         // Split on double spaces after sentence-ending punctuation
         // Group roughly every 2 sentences into a paragraph
-        var sentences = text.match(/[^.!?]+[.!?]+[\s]*/g) || [text];
-        var paragraphs = [];
-        for (var i = 0; i < sentences.length; i += 2) {
-            var chunk = sentences.slice(i, i + 2).join('').trim();
+        const sentences = text.match(/[^.!?]+[.!?]+[\s]*/g) || [text];
+        const paragraphs = [];
+        for (let i = 0; i < sentences.length; i += 2) {
+            const chunk = sentences.slice(i, i + 2).join('').trim();
             if (chunk) paragraphs.push(chunk);
         }
         return paragraphs.map(function(p) {
@@ -109,7 +109,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     }
 
     function loadItem(index) {
-        var item = items[index];
+        const item = items[index];
         document.querySelector('#artifact-id').textContent = item.id;
         document.querySelector('#artifact-title').textContent = item.title;
 
@@ -119,7 +119,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             splitIntoParagraphs(item.description);
 
         // Intelligence panel — subheading + HTML content + citations
-        var intel = document.querySelector('#intelligence-text');
+        const intel = document.querySelector('#intelligence-text');
         intel.innerHTML =
             '<div class="panel-subheading">Supporting Data</div>' +
             '<div class="intel-body">' + item.intelligence + '</div>' +
