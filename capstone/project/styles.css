@@ -706,3 +706,30 @@ html, body {
     border-color: #ffffff;
     color: #ffffff;
 }
+
+footer {
+    position: fixed;
+    top: 10px;
+    left: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: #6e6e6e;
+    z-index: 999;
+    pointer-events: none;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    pointer-events: auto;
+}
+
+.footer-link {
+    color: #c89a00;
+    text-decoration: none;
+    transition: color 0.15s;
+}
