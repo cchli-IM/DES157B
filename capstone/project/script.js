@@ -99,12 +99,12 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         document.querySelector('#artifact-id').textContent = item.id;
         document.querySelector('#artifact-title').textContent = item.title;
 
-        // Description panel — subheading + paragraphs
+        // Description panel 
         document.querySelector('#description-text').innerHTML =
             '<div class="panel-subheading">Object Analysis</div>' +
             item.description;
 
-        // Intelligence panel — subheading + HTML content + citations
+        // Intelligence panel 
         const intel = document.querySelector('#intelligence-text');
         intel.innerHTML =
             '<div class="panel-subheading">Supporting Data</div>' +
