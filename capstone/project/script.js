@@ -81,8 +81,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     //   CONTENT SWAP 
     function buildCitations(citations) {
         if (!citations || citations.length === 0) return '';
- 
-        const urlPattern = /(https?:\/\/[^\s]+)/g;
+        //citation link
+        const urlPattern = /(https?:\/\/[^\s]+)/g; 
  
         const links = citations.map(function(cite) {
             const linked = cite.replace(urlPattern, function(url) {
