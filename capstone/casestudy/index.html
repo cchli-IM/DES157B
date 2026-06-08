@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Case Study Template - To you, eight decades in the past</title>
+
+    <!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+    <!-- add any google fonts you want to use -->
+	
+	<!--/ /-------- Font Awesome --------/ /-->
+    <!--Add this if you want icons from font awesome
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
+	
+	<!--/ /-------- Your Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+	
+	<!--/ /-------- Needed For Mobile Devices --------/ /-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header id="top">
+        <div class="container">
+            <h1>Capstone Project Case Study - "To you, eight decades in the past"</h1>
+           <div class="center"> 
+            <p>Chao Li</p>
+            <address>&#099;&#099;&#104;&#108;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</address>
+        </div>
+    
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#overview">overview</a></li>
+            <li><a href="#research">research</a></li>
+            <li><a href="#design">design</a></li>
+            <li><a href="#ui">user interface</a></li>
+            <li><a href="#revisions">revisions</a></li>
+            <li><a href="#summary">summary</a></li>
+        </ul>
+    </nav>
+
+    <!--/ /-------- Overview Section --------/ /-->
+    <section id="overview">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <img src="images/splash.png" class="full-width-img">
+            <div class="content">
+
+                <p>My capstone project is an interactive experience that places the user inside the simulated terminal of a government analyst. A reverse time capsule has arrived from the year 2089, more than 60 years in the future. The package itself contains five physical artifacts recovered from a dystopian future shaped by decades of climate inaction. The user's role as an analyst is to examine, document, and interpret each object. The objects themselves are presented through an interactive rotatable 3D scan. Additionally, each object comes with two types of texual content that provides important details: a fictional in-world description that establishes the object's origin and narrative context, and a current intelligence panel that grounds the fiction in real, sourced climate research. The project is built using Three.js for 3D rendering, Typed.js for the terminal text output, and a JSON centered system that separates narrative from data.</p>
+
+                <p>The primary audience is digitally literate adults between roughly 18 and 35, people who are broadly aware that climate change is a serious issue but have not yet felt its consequences as something that will have a visible affect their own lives. The project is not designed for climate researchers or policy experts, rather it is designed for people who knows the problem exists but has not yet acknowledged it as urgent</p>
+                
+    
+                <p>Most people understand climate change intellectually but experience it as something distant, happening elsewhere, to other people, in a future that belongs to someone else. This project attempts to reduce that disconnect by making the consequences of inaction feel immediate, specific, and personal. By giving the viewer an active role rather than a passive one, the experience asks them to reach their own conclusions rather than being told what to think. The fictional artifacts create emotional investment, and the real research data then confirms that the world those artifacts describe is already beginning to form.  </p>
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- UX Research Section --------/ /-->
+      <section id="research">
+        <div class="container">
+            <h2>Project Research</h2>
+            <div class="content">
+
+                <p>The research began with an investigation into the real science behind the project's four climate pillars: extreme heat, rising sea levels, food and water supply collapse, and worsening wildfires. Sources from Stanford's Doerr School of Sustainability, the Center for Climate and Energy Solutions, Tulane University, the United Nations, and Clarity Movement were compiled into an annotated bibliography. This research later became the backbone of the intelligence panel in the interface, where every claim made in the current intelligence section is sourced and cited directly from this body of work.</p>
+            
+                <p>Comparative research focused on two existing projects that shared similarities with the capstone. The first, Superflux's Mitigation of Shock, is a physical installation set in a London flat in the year 2049. Every object in the space was modeled to reflect the mundane realities of life after climate collapse, mold on the ceiling, recipes adapted for scarce ingredients, a radio broadcast from a changed world. It proved that everyday objects carry more emotional weight than dramatic imagery, and that specificity creates immersion. The second, Kaspersky's Earth 2050, is a web-based platform that maps speculative futures onto a 3D globe, allowing users to explore predictions for different cities across three time periods. It demonstrated that an interactive web format could reach a mass audience and mantain engagement through user interaction, though its crowdsourced content lacked narrative coherence.</p>
+
+                <p>Mitigation of Shock had depth and emotional power but was locked to a physical format. Earth 2050 had reach and interactivity but contained no unified narrative. The goal was to combine the storytelling of the former with the accessible web format of the latter, into a single coherent world with the viewer placed inside it as an active participant rather than a passive observer. </p>
+
+                    </div>
+            <img src="images/biblio.png" class="full-width-img">
+        </div>
+    </section>
+
+    <!--/ /-------- Design Section --------/ /-->
+     <section id="design">
+        <div class="container">
+            <h2>Visual Design</h2>
+            <div class="content">
+                <img src="images/ui.png">
+                <div class="col-span-2">
+
+                <p>The visual design is built around a single theme: a government workstation that has been running the same operating system for years. The interface should feel institutional and utilitarian, not designed with good user experience in mind. It creates authenticity by looking like something that already exists rather than something imagined. This restraint serves the narrative because it keeps the focus on the objects themselves rather than the presentation around them.</p>
+
+                <p>The color system uses a near black background with a muted grey text hierarchy. Amber is reserved exclusively for active, interactive, or alert-level elements, the blinking indicator on the notification screen, the current intelligence panel, system alerts, so that anything amber immediately reads as significant. A secondary blue tone anchors the 3D viewer panel, giving the artifact scan its own distinct visual zone. The two typefaces reinforce a grounded aesthetic: IBM Plex Mono carries everything the system outputs, labels, headers, navigation, metadata, while Courier Prime handles everything a human wrote, including artifact descriptions and the briefing document.</p>
+                      </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--/ /-------- UI Section --------/ /-->
+    <section id="ui">
+        <div class="container">
+            <h2>User Interface</h2>
+            <div class="content">
+                <div class="col-span-2">
+
+                    <p>The interface is structured across four different pages that move the viewer through a narrative. The first screen is a notification card, an in-universe secure communication from the Bureau of Forward Continuity informing the analyst that a package requires review. The second screen is a briefing document typed out in real time using Typed.js, establishing the context before any objects are revealed. The third and primary screen is the investigation terminal, where the viewer examines each of the five artifacts. The fourth screen is the conclusion, where the viewer is asked to file a recommended action report.</p>
+
+                    <p>The investigation terminal showcases a vertical layout, where the 3D artifact viewer occupies the upper portion of the screen, and two equal panels below it hold the artifact description on the left and the current intelligence on the right. A reset view button in the lower right corner of the viewer returns the camera to its default position if the object is moved out of frame. Navigation between the five items exists at the bottom section. Once all five items have been viewed, a conclude bar appears prompting the viewer to proceed to the final screen.</p>
+                
+                       </div>
+                <div class="img-stack">
+                    <img src="images/element1.png">
+                    <img src="images/element2.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--/ /-------- Revisions Section --------/ /-->
+    <section id="revisions">
+        <div class="container">
+            <h2>Revisions</h2>
+            <div class="content">
+                <p>Usability testing helped expose four significant issues. The first was a lack of visual hierarchy across the interface. Headers, labels, interactive elements, and decorative elements were too close in color and size, making it difficult for viewers to distinguish what was interactive from what was structural. In response, the panel labels were increased in size and weight, given higher contrast colors, and the amber color was redistributed so that it only appears on elements that require attention. The second issue was the absence of a reset mechanism for the 3D viewer. If a viewer rotated the object out of frame, there was no way to recover without refreshing the page. A reset view button was added to the lower right corner of the viewer panel to address this directly.</p>
+
+                <p>The third and most significant issue was the conclusion screen. Testers could not figure out what the page was asking them to do without explanation from the creator. Viewers were mislead into thinking that the textbox in the conclusions required their input. The page also lacked any statement of purpose. A full redesign of the conclusion screen was in place. The blinking cursor was removed from non-input contexts, a direct explanation was added, and the recommended action field was labeled explicitly. The fourth issue was text density across the description and intelligence panels. In response, paragraph breaks were introduced directly into the JSON file, font size was increased slightly, line height was improved, and subheadings were added to give each panel a more navigable structure.</p>
+
+                <img src="images/revision.png">
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- Summary Section --------/ /-->
+       <section id="summary">
+        <div class="container">
+            <h2>Summary</h2>
+          
+
+                    <p>This project set out to reduce the distance between knowing about climate change and feeling its urgency as something personally relevant. By framing the experience as a government investigation into artifacts from a preventable future, the project gives the viewer an active role in analyzing the evidence rather than receiving a predetermined conclusion. The investigative format keeps the viewer engaged, the two-layer content model heightens the emotional stakes with real data, and the open-ended conclusion lets the user feel the weight and importance of the solution that is to be proposed.</p>
+
+                    <p>Working on this project helped me push past my comfort zone and explore ideas that initially seemed too advanced or beyond my skill level. The usage of libraries opened a whole world of possibilities for me and enabled to to achieve fantastic results borrowing from other people's expertise. The thing I am most proud of is the interactive 3D canvas that allows the user to inspect objects in 3D space. It is the most visually significant part of the project, but also the most difficult to set up. Not only did I have to figure out how to use the Three.js library, but I also had to alter and build upon the models myself to have them fit the narrative I am going for. In the end, getting the objects to show up was an immensely frustrating and satisfying experience</p>
+           
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h1>Capstone Project Case Study - "To you, eight decades in the past"</h1>
+            <p>Chao Li</p>
+            <address>&#099;&#099;&#104;&#108;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</address>
+            <p><a href="#top">top</a></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
