@@ -94,20 +94,6 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         return '<div class="citation-block">' + links.join('') + '</div>';
     }
  
-    function splitIntoParagraphs(text) {
-        // Split on double spaces after sentence-ending punctuation
-        // Group roughly every 2 sentences into a paragraph
-        const sentences = text.match(/[^.!?]+[.!?]+[\s]*/g) || [text];
-        const paragraphs = [];
-        for (let i = 0; i < sentences.length; i += 2) {
-            const chunk = sentences.slice(i, i + 2).join('').trim();
-            if (chunk) paragraphs.push(chunk);
-        }
-        return paragraphs.map(function(p) {
-            return '<p>' + p + '</p>';
-        }).join('');
-    }
-
     function loadItem(index) {
         const item = items[index];
         document.querySelector('#artifact-id').textContent = item.id;
@@ -116,7 +102,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         // Description panel — subheading + paragraphs
         document.querySelector('#description-text').innerHTML =
             '<div class="panel-subheading">Object Analysis</div>' +
-            splitIntoParagraphs(item.description);
+            item.description;
 
         // Intelligence panel — subheading + HTML content + citations
         const intel = document.querySelector('#intelligence-text');
@@ -186,6 +172,47 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         document.querySelector('#conclusion').classList.add('hidden');
         document.querySelector('#terminal').classList.remove('hidden');
     });
+
+    // ─── PROPOSAL FIELD ───────────────────────────────────────────────────
+    let proposalTyped = false;
+
+    const proposalRaw = `BUREAU OF FUTURE CONTINUATION\nANALYST PROPOSAL — TSO-2089-001\n\nHaving reviewed all recovered artifacts, this analyst recommends the following course of action:\n\nEffective immediately, ████████████████ must be held accountable for ████████ through binding ███████████ enforced by █████. Funding equivalent to ████████████ annually shall be redirected from ████ toward ██████ infrastructure and community-led █████ ███ programs.\n\nAll ████████████████ agreements signed after ██████ are to be renegotiated with █████ as the primary benchmark. Citizens of █████ retain the right to █████.\n\nThis proposal carries a ██.██% probability of preventing the 2089 scenario.\n\n— ANALYST ON RECORD`;
+
+
+    const actionField = document.querySelector('#action-field');
+    const actionHint = document.querySelector('#action-hint');
+
+    actionField.addEventListener('click', function() {
+        if (proposalTyped) return;
+        proposalTyped = true;
+
+        actionField.style.cursor = 'default';
+        actionHint.classList.add('hidden');
+
+        document.querySelector('#action-cursor').remove();
+
+        actionField.innerHTML = '';
+
+        const fullHTML = proposalRaw.replace(/\n/g, '<br>');
+        actionField.innerHTML = '<span class="proposal-reveal">' + fullHTML + '</span>';
+        actionField.querySelector('.proposal-reveal').classList.add('animate-in');
+
+        // After animation, show submit
+        setTimeout(function() {
+            document.querySelector('#action-submit-row').classList.remove('hidden');
+            document.querySelector('#action-note').classList.add('hidden');
+        }, 3200);
+    }, { once: true });
+
+    // ─── SUBMITTED STATE ──────────────────────────────────────────────────
+    document.querySelector('#btn-submit-proposal').addEventListener('click', function() {
+        this.textContent = '[ TRANSMISSION SENT — BUREAU ACKNOWLEDGED ]';
+        this.disabled = true;
+        this.style.color = '#555';
+        this.style.borderColor = '#3a3a3a';
+        this.style.cursor = 'default';
+        this.style.animation = 'none';
+    });
  
     // THREE.JS SETUP  
     const canvas = document.querySelector('#three-canvas');
@@ -239,14 +266,14 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         }
     });
 
+    let inited = false;
     async function init() {
-        
-         const res = await fetch('files/items.json');
+        if (inited) { loadItem(current); return; }
+        inited = true;
+        const res = await fetch('files/items.json');
         items = await res.json();
         loadItem(0);
     }
- 
-    init();
 
 
 
